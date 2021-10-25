@@ -253,11 +253,11 @@ header {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 
-.porftolio__item {
+.portfolio__item {
     overflow: hidden;
 }
 
-.porftolio__img {
+.portfolio__img {
     height: 350px;
     width: 700px;
     overflow: hidden;
@@ -267,7 +267,7 @@ header {
     opacity 250ms linear;
 }
 
-.porftolio__img:hover {
+.portfolio__img:hover {
     transform: scale(1.2);
 }
 
