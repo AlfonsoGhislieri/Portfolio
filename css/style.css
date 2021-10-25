@@ -258,8 +258,8 @@ header {
 }
 
 .porftolio__img {
-    height: 300px;
-    width: 800px;
+    height: 350px;
+    width: 700px;
     overflow: hidden;
     object-fit: cover;
     transition: 
