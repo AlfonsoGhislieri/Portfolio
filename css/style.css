@@ -75,7 +75,6 @@ h3 {font-size: var(--fs-h3);}
 
 .section__title--intro {
     font-weight: var(--fw-reg);
-    text-align: center;
 }
 
 .section__title--intro strong {
@@ -156,8 +155,6 @@ header {
     position: fixed;
 }
 
-
-
 /* Intro */
 
 .intro {
@@ -180,9 +177,10 @@ header {
         grid-area: img;
         position: relative;
         min-width: 250px
-       
     }
-
+    .section__title--intro{
+        text-align: center;
+    }
     .section__subtitle--intro {
         align-self: start;
         grid-column: 1 / -1;
@@ -190,6 +188,7 @@ header {
         position: relative;
         text-align: center;
         right: -2em;
+        padding-left: 5.5em;
     }
 }
 
