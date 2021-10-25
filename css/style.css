@@ -1,0 +1,365 @@
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom properties */
+:root {
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Encode Sans', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #D0D3D4;
+    --clr-dark: #303030;
+    --clr-accent: #76D7C4;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section{
+    padding: 2em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+
+strong {font-weight: var(--fw-bold);}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {font-size: var(--fs-h1);}
+h2 {font-size: var(--fs-h2);}
+h3 {font-size: var(--fs-h3);}
+
+.section__title {
+    margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--about,
+.section__subtitle--intro{
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    padding: 0.25em;
+    margin-bottom: 1em;
+}
+
+/* Header */ 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.nav {
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-accent);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5,1);
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    color: var(--clr-light);
+    font-weight:var(--fw-bold) ;
+    font-size: var(--fs-h3);
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav-toggle {
+    background: transparent;
+    padding: 0.5em;
+    border: 0;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1000;
+    color: var(--clr-accent);
+}
+
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+
+
+/* Intro */
+
+.intro {
+    position: relative;
+}
+
+@media (min-width: 600px){
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img {
+        grid-area: img;
+        position: relative;
+        min-width: 250px
+       
+    }
+
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        text-align: center;
+        right: -2em;
+    }
+}
+
+/* About */
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas:
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+
+    }
+    .section__title--about {
+        grid-area: title;
+    }
+
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        padding-left: 0.5em;
+        position: relative;
+    }
+
+    .about-me__body {
+        grid-area: text;
+
+    }
+    .about-me__img {
+        padding-top: 25%;
+        grid-area: img;
+        position: relative;
+        min-width: 300px;
+        left: -2em;
+    }
+}
+
+/* Projects */ 
+.projects {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__subtitle--projects {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+.porftolio {
+    display: grid;
+    padding-left: 20%;
+    padding-right: 20%;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.porftolio__item {
+    overflow: hidden;
+}
+
+.porftolio__img {
+    height: 300px;
+    width: 800px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 
+    transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+    opacity 250ms linear;
+}
+
+.porftolio__img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.footer__link, 
+.social-list__link {
+    color: var(--clr-accent);
+    text-decoration: none;
+}
+
+.footer__link {
+    font-weight: var(--fw-bold);
+}
+
+.footer__link:hover, 
+.social-list__link:hover {
+    opacity: 0.7;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 0.5em;
+    }
+
+.social-list__link {
+    padding: 0.5em;
+}
+
+/* Portfolio individual item style */
+
+.portfolio-item-ind {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-ind {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--fs-h3);
+}
+
+/* Portfolio title style */
+
+.intro__portfolio {
+    position: relative;
+}
+
+@media (min-width: 600px){
+    .intro__portfolio {
+        width: 850px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.section__title__portfolio {
+    margin-bottom: 0.25em;
+    font-weight: var(--fw-bold);
+
+}
+
+.section__subtitle__portfolio  {
+    margin: 0;
+    font-size: var(--fs-h3);
+    
+}
+
+.section__subtitle__portfolio {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    padding: 0.25em;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+}
