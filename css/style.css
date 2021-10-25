@@ -129,7 +129,7 @@ header {
 .nav__link {
     color: var(--clr-light);
     font-weight:var(--fw-bold) ;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     text-decoration: none;
 }
 
