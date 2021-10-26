@@ -9,7 +9,7 @@
     --ff-primary: 'Poppins', sans-serif;
     --ff-secondary: 'Encode Sans', sans-serif;
 
-    --fw-reg: 300;
+    --fw-reg: 400;
     --fw-bold: 900;
 
     --clr-light: #D0D3D4;
@@ -19,7 +19,7 @@
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+    --fs-body: 1.15rem;
 }
 
 @media (min-width: 800px) {
@@ -46,7 +46,7 @@ body {
 }
 
 section{
-    padding: 2em 2em;
+    padding: 2em 1em;
 }
 
 img {
@@ -207,8 +207,8 @@ header {
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
-
     }
+    
     .section__title--about {
         grid-area: title;
     }
@@ -222,8 +222,8 @@ header {
 
     .about-me__body {
         grid-area: text;
-
     }
+
     .about-me__img {
         padding-top: 25%;
         grid-area: img;
