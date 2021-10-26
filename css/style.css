@@ -14,7 +14,7 @@
 
     --clr-light: #D0D3D4;
     --clr-dark: #303030;
-    --clr-accent: #76D7C4;
+    --clr-accent: #88b6ad;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -71,6 +71,7 @@ h3 {font-size: var(--fs-h3);}
 
 .section__title {
     margin-bottom: 0.25em;
+    font-weight: var(--fw-bold);
 }
 
 .section__title--intro {
@@ -163,73 +164,54 @@ header {
 
 @media (min-width: 600px){
     .intro {
+        min-width: 600px;
         display: grid;
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
+            "img title";
+    }
+
+    .section__title--intro{
+        padding-top: 1em;
+        text-align: center;
+        grid-area: title;
     }
 
     .intro__img {
         grid-area: img;
+        min-width: 300px;
         position: relative;
-        min-width: 250px
-    }
-    .section__title--intro{
-        text-align: center;
-    }
-    .section__subtitle--intro {
-        align-self: start;
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        text-align: center;
-        right: -2em;
-        padding-left: 7em;
     }
 }
 
 /* About */
 .about-me {
-    max-width: 1000px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
 @media (min-width: 600px) {
-    .about-me {
+    .about {
         display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas:
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
     }
     
     .section__title--about {
-        grid-area: title;
+        font-size: 2.5rem;
+        grid-row: 1;
     }
 
     .section__subtitle--about {
-        grid-column: 1 / -1;
         grid-row: 2;
         padding-left: 0.5em;
-        position: relative;
+        margin: 0 -.25em;
     }
 
     .about-me__body {
-        grid-area: text;
-    }
-
-    .about-me__img {
-        padding-top: 25%;
-        grid-area: img;
-        position: relative;
-        min-width: 300px;
-        left: -2em;
+        grid-row: 3;
+        font-weight: 600;
     }
 }
 
@@ -350,13 +332,14 @@ header {
 
 }
 
-.section__subtitle__portfolio  {
-    margin: 0;
-    font-size: var(--fs-h3);
-    
+.portfolio-item-ind  {
+    font-weight: 600;
 }
 
 .section__subtitle__portfolio {
+    margin: 0;
+    font-size: var(--fs-h3);
+    font-weight: 600;
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
     padding: 0.25em;
