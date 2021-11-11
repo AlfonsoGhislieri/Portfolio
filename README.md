@@ -20,6 +20,6 @@ The website has a main page which contains a short summary, a section for projec
 
 ## Challenges
 
-The main struggle I had to overcome with this project was staying organized with all the different sections and webpages. I had to learn how to effectively use classes in order to keep uniformity for the layout and also make it easy to add to the project in the future. 
+The main struggle I had to overcome with this project was staying organized with all the different sections and webpages. I had to learn how to effectively use classes in order to keep uniformity for the layout and also make it easier to add to the project in the future. 
 
 Making sure the website would also look good at different resolutions was another issue I encountered. I decided to use the @media rule in order to apply different styles that would adapt at different resoutions. 
