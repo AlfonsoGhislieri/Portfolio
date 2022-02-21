@@ -89,8 +89,8 @@ h3 {font-size: var(--fs-h3);}
 
 .section__subtitle--about,
 .section__subtitle--intro{
-    background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    font-style: italic;
     padding: 0.25em;
     margin-bottom: 1em;
 }
@@ -140,7 +140,7 @@ header {
 
 .nav-toggle {
     background: transparent;
-    padding: 0.5em;
+    padding-left: 0.5em;
     border: 0;
     font-size: 35px;
     cursor: pointer;
@@ -156,10 +156,34 @@ header {
     position: fixed;
 }
 
-/* Intro */
+/* Flex box container for intro and about me */
+.intro-container {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: center;
+}
+
 
 .intro {
+    padding-top: 2.5em;
+}
+
+.intro__img {
+    max-width: 300px;
+}
+
+.about-me {
+    padding-left: 2em;
+}
+
+
+/* Intro */
+
+/* .intro {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 600px){
@@ -185,10 +209,10 @@ header {
         min-width: 300px;
         position: relative;
     }
-}
+} */
 
 /* About */
-.about-me {
+/* .about-me {
     max-width: 850px;
     margin: 0 auto;
 }
@@ -213,7 +237,7 @@ header {
         grid-row: 3;
         font-weight: 600;
     }
-}
+} */
 
 /* Projects */ 
 .projects {
@@ -340,9 +364,8 @@ header {
     margin: 0;
     font-size: var(--fs-h3);
     font-weight: 600;
-    background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    font-style: italic;
     padding: 0.25em;
-    margin-bottom: 0.5em;
     padding-left: 0.5em;
 }

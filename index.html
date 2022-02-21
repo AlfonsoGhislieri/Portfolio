@@ -20,47 +20,54 @@
     <body>
         <!-- Header -->
         <header>
-            <button class="nav-toggle" id="nav_button"><i class="fa fa-bars"></i></button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html#nav_button" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#projects" class="nav__link">My projects</a></li>
-                    <li class="nav__item"><a href="index.html#footer" class="nav__link">Contact / media links</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Intro -->
-        <section class="intro" id="home">
+            <div class="hamburger">
+                <button class="nav-toggle" id="nav_button"><i class="fa fa-bars"></i></button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#nav_button" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#projects" class="nav__link">My projects</a></li>
+                        <li class="nav__item"><a href="index.html#footer" class="nav__link">Contact / media links</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
             <h1 class="section__title section__title--intro">
                 <strong>Alfonso Ghislieri</strong> 
             </h1>
-            <img src="img\profile_pic1-modified.png" class="intro__img" alt="picture of Alfonso in the sun">
-        </section>
+            <div></div>
+        </header>
 
-        <!-- About me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about"> About me</h2>
-            <h3 class="section__subtitle section__subtitle--about"> Full stack software engineer</h3>
-            <div class="about-me__body">
-                <p> 
-                    Bachelor's degree in History and Master's degree in International Relations, formerly worked
-                    at the United Nations and the Right Livelihood Award Foundation.
-                </p>
-                <p> 
-                    Experience with backend (Ruby, Rails, Node.js, Python), database management (SQL, PostgreSQL) 
-                    and frontend (JavaScript, HTML, CSS).
-                </p>
-                <p> 
-                    Looking for a role where I can continue to learn and expand my programming knowledge. 
-                </p>
+        <div class="intro-container">
+            <!-- Intro -->
+            <section class="intro" id="home">
+                <img src="img\profile_pic1-modified.png" class="intro__img" alt="picture of Alfonso in the sun">
+            </section>
 
-            </div>
-        </section>
+            <!-- About me -->
+            <section class="about-me" id="about">
+
+                <h2 class="section__subtitle section__subtitle--about"> Full stack software engineer</h2>
+                <div class="about-me__body">
+                    <p> 
+                        Bachelor's degree in History and Master's degree in International Relations, formerly worked
+                        at the United Nations and the Right Livelihood Award Foundation.
+                    </p>
+                    <p> 
+                        Experience with b  ackend (Ruby, Rails, Node.js, Python), database management (SQL, PostgreSQL) 
+                        and frontend (JavaScript, HTML, CSS).
+                    </p>
+                    <p> 
+                        Looking for a role where I can continue to learn and expand my programming knowledge. 
+                    </p>
+
+                </div>
+            </section>
+        </div>
+
 
         <!-- Projects section-->
         <section class="projects" id="projects">
-            <h2 class="section__title section__title--projects"> My Portfolio</h2>
+            <h2 class="section__title section__title--projects">Portfolio</h2>
             <p class="section__subtitle section__subtitle--projects"> A selection of my projects</p>
 
             <div class="porftolio">
