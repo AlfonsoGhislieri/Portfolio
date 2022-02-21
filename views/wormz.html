@@ -20,54 +20,50 @@
     <body>
         <!-- Header -->
         <header>
-            <button class="nav-toggle" id="nav_button"><i class="fa fa-bars"></i></button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="../index.html#nav_button" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="../index.html#projects" class="nav__link">My projects</a></li>
-                    <li class="nav__item"><a href="../index.html#footer" class="nav__link">Contact / media links</a></li>
-                </ul>
-            </nav>
+            <div class="hamburger">
+                <button class="nav-toggle" id="nav_button"><i class="fa fa-bars"></i></button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html#nav_button" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="../index.html#projects" class="nav__link">My projects</a></li>
+                        <li class="nav__item"><a href="../index.html#footer" class="nav__link">Contact / media links</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <!-- Intro -->
         <section class="intro__portfolio" id="home">
             <h1 class="section__title__portfolio section__title__portfolio--intro">
-                <strong>Task Divider</strong> 
+                <strong>Wormz </strong> 
             </h1>
             <p class="section__subtitle__portfolio section__subtitle__portfolio--intro">
-                A Java android application
-                <a href="https://github.com/AlfonsoGhislieri/Task-Divider">(GitHub repo)</a>
+                2d game inspired by Team17's Worms
+                <a href="https://github.com/AlfonsoGhislieri/wormz">(GitHub Repo)</a>
             </p>
         </section>
 
         <!-- Main section -->
         <div class="portfolio-item-ind">
-            <p>I created an Android Application called  <strong>"Task Divider"</strong> which divides tasks for users. This was achieved using Android Studio and Java. 
-                I used it as an opportunity to learn a language (Java) and create my first ever mobile application.
+            <p> 
+              Created from start to finish in 2 weeks using JavaScript, p5, Matter.js, Express, Node, HTML, CSS.
+              This group project (team of 6) was our first attempt at creating a game. We opted for a browser game, 
+              allowing players to play 1v1 against each other locally. 
             </p>
-            <img src="../img/projects/task_divider2.png" class="portfolio-item-ind" alt="example pic of app working">
+            <p> 
+              We used pair programming and a Spike and Stabilize approach for the duration of the project.
+            </p>
+            <img src="../img/projects/wormsMoving.gif" class="portfolio-item-ind " alt="graphs">
             <p>
-                Besides learning the basics of Java this project allowed me to explore:
-                <ul>
-                    <li> Using xml to create a UI</li>
-                    <li> Creating and implementing buttons</li>
-                    <li> Incorporating error messages and checks to combat possible user issues</li>
-                    <li> Creating multiple fragments and using arrayAdapters to change from one to another </li>
-                    <li> Using Bundles to transfer data across fragments</li>
-                </ul>
-
+              Using Matter.js and p5 we implemented physics in the game. This includes moving, shooting, 
+              weapons that fire different projectiles, desctructible terrain, 
+              and collisions between projectiles and worms.
             </p>
-            <p> Although I am happy with the project as a whole it could still be worked on and improved. <strong> Things to consider implementing could be:</strong> 
-                <ul>
-                    <li> Adding weight to inputted tasks for better balancing</li>
-                    <li> Adding minimum and max assigned tasks per user depending on total users</li>
-                </ul>
+            <p>
+              Deployed on Heroku <a href="https://wormz.herokuapp.com/">Play here!</a>
             </p>
-
         </div>
         
-
         <!-- Footer-->
         <footer class="footer" id="footer">
             <a href="mailto:alfonso.ghislieri96@gmail.com" class="footer__link">alfonso.ghislieri96@gmail.com</a>
