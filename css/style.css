@@ -116,6 +116,10 @@ header {
     transition: transform 250ms cubic-bezier(0.5, 0, 0.5,1);
 }
 
+#nav_button {
+    outline:none;
+}
+
 .nav__list {
     list-style: none;
     display: flex;
