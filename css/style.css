@@ -241,9 +241,9 @@ header {
 
 .porftolio {
     display: grid;
-    padding-left: 20%;
-    padding-right: 20%;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 }
 
 .portfolio__item {
@@ -258,6 +258,19 @@ header {
     transition: 
     transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
     opacity 250ms linear;
+}
+
+@media (max-width: 700px) {
+    .porftolio {
+        display: grid;
+        padding-left: 10%;
+        padding-right: 10%;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    }
+    .portfolio__img {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 .portfolio__img:hover {
