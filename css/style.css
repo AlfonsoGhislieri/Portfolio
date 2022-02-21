@@ -164,7 +164,6 @@ header {
     justify-content: center;
 }
 
-
 .intro {
     padding-top: 2.5em;
 }
@@ -177,67 +176,55 @@ header {
     padding-left: 2em;
 }
 
-
-/* Intro */
-
-/* .intro {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+/* Responsive at different resolutions */
+@media (max-width: 1400px) {
+    .intro-container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
 
-@media (min-width: 600px){
-    .intro {
-        min-width: 600px;
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img title";
+@media (max-width: 1200px) {
+    .intro-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .intro-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro-container {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+@media (max-width: 600px) {
+    .intro-container {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
-    .section__title--intro{
-        padding-top: 1em;
-        text-align: center;
-        grid-area: title;
+    .intro {
+        padding-top: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .intro__img {
-        grid-area: img;
-        min-width: 300px;
-        position: relative;
+        max-width: 200px;
     }
-} */
-
-/* About */
-/* .about-me {
-    max-width: 850px;
-    margin: 0 auto;
 }
-
-@media (min-width: 600px) {
-    .about {
-        display: grid;
-    }
-    
-    .section__title--about {
-        font-size: 2.5rem;
-        grid-row: 1;
-    }
-
-    .section__subtitle--about {
-        grid-row: 2;
-        padding-left: 0.5em;
-        margin: 0 -.25em;
-    }
-
-    .about-me__body {
-        grid-row: 3;
-        font-weight: 600;
-    }
-} */
 
 /* Projects */ 
 .projects {
