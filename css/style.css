@@ -118,6 +118,7 @@ header {
 
 #nav_button {
     outline:none;
+    color: var(--clr-dark);
 }
 
 .nav__list {
@@ -184,6 +185,12 @@ header {
 
 .about-me {
     padding-left: 2em;
+}
+
+.about-me-link {
+    text-decoration: none;
+    color: rgb(223, 51, 62);
+    text-align: center;
 }
 
 /* Responsive at different resolutions */
@@ -294,6 +301,10 @@ header {
 .about-me-container {
     padding-left: 15%;
     padding-right: 15%;
+}
+
+p.about-me {
+    font-weight: 300;
 }
 
 .about-intro {
