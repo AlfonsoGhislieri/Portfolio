@@ -169,7 +169,13 @@ header {
 }
 
 .intro {
-    padding-top: 2.5em;
+    padding-top: 1em;
+}
+
+.social-list__link-intro {
+    font-size: 33px;
+    color:var(--clr-dark);
+    text-decoration: none;
 }
 
 .intro__img {
@@ -303,7 +309,8 @@ header {
 }
 
 .footer__link:hover, 
-.social-list__link:hover {
+.social-list__link:hover,
+.social-list__link-intro:hover {
     opacity: 0.7;
 }
 
