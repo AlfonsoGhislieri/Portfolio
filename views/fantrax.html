@@ -14,20 +14,22 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     
     <body>
         <!-- Header -->
         <header>
-            <button class="nav-toggle" id="nav_button"><i class="fa fa-bars"></i></button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html#nav_button" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#projects" class="nav__link">My projects</a></li>
-                    <li class="nav__item"><a href="index.html#footer" class="nav__link">Contact / media links</a></li>
-                </ul>
-            </nav>
+            <div class="hamburger">
+                <button class="nav-toggle" id="nav_button"><i class="fa fa-bars"></i></button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html#nav_button" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="../index.html#projects" class="nav__link">My projects</a></li>
+                        <li class="nav__item"><a href="../index.html#footer" class="nav__link">Contact / media links</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <!-- Intro -->
@@ -43,7 +45,7 @@
             <p> In this project I analysed data obtained from the Fantrax English Premier League fantasy football website. The goal
                 was to work in Python and learn common analytics and visualization tools such as Pandas, Seaborn, Matplotlib.
             </p>
-            <img src="img\fantrax2.png" class="portfolion-item-ind__img" alt=" graphs">
+            <img src="../img/projects/fantrax2.png" class="portfolion-item-ind__img" alt=" graphs">
             <p>
                  I learnt about:
                 <ul>
@@ -79,6 +81,6 @@
             </ul>
         </footer>
 
-        <script src="js/index.js"></script>
+        <script src="../js/index.js"></script>
     </body>
 </html>
