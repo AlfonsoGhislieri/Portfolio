@@ -269,7 +269,7 @@ p.about-me {
     justify-content: center;
 }
 .about-me-img {
-    max-width: 200px;
+    max-width: 250px;
     border-radius: 5%;
 }
 
@@ -372,7 +372,9 @@ p.about-me {
     }
 
     .about-me-img {
+        padding-top: 1em;
         max-width: 115px;
+        max-height: 140px;
     }
 
     .about-intro {
