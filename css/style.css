@@ -87,11 +87,16 @@ h3 {font-size: var(--fs-h3);}
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--about,
+.section__subtitle--about {
+    font-family: var(--ff-secondary);
+    font-style: italic;
+    padding-left: 0.5em;
+}
+
+
 .section__subtitle--intro{
     font-family: var(--ff-secondary);
     font-style: italic;
-    padding: 0.25em;
     margin-bottom: 1em;
 }
 
@@ -193,55 +198,6 @@ header {
     text-align: center;
 }
 
-/* Responsive at different resolutions */
-@media (max-width: 1400px) {
-    .intro-container {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-}
-
-@media (max-width: 1200px) {
-    .intro-container {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .intro-container {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-
-@media (max-width: 800px) {
-    .intro-container {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-}
-@media (max-width: 700px) {
-    .intro-container {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        flex-direction: column;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    .intro {
-        padding-top: 0;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .intro__img {
-        max-width: 200px;
-    }
-}
 
 /* Portfolio section */ 
 .projects {
@@ -299,8 +255,8 @@ header {
 /* About me */
 
 .about-me-container {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 p.about-me {
@@ -311,11 +267,10 @@ p.about-me {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-right: 10em;
 }
 .about-me-img {
-    margin-right: 1em;
     max-width: 200px;
+    border-radius: 5%;
 }
 
 .about-me-subtitle {
@@ -323,15 +278,6 @@ p.about-me {
     font-weight: 750;
 }
 
-@media (max-width: 700px) {
-    .about-me-img {
-        max-width: 150px;
-    }
-
-    .about-intro {
-        margin-right: 0;
-    }
-}
 /* Footer */
 .footer {
     background: #111;
@@ -377,3 +323,80 @@ p.about-me {
     padding: 0.5em;
 }
 
+/* Responsive at different resolutions */
+@media (max-width: 1400px) {
+    .intro-container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .about-me-container {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .about-me-container {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .intro-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-me-container {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro-container {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .about-me-container {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    .about-me-img {
+        max-width: 115px;
+    }
+
+    .about-intro {
+        margin-right: 0;
+    }
+}
+@media (max-width: 700px) {
+    .intro-container {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .intro {
+        padding-top: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro__img {
+        max-width: 200px;
+    }
+}
