@@ -371,12 +371,6 @@ p.about-me {
         padding-left: 0%;
     }
 
-    .about-me-img {
-        padding-top: 1em;
-        max-width: 115px;
-        max-height: 140px;
-    }
-
     .about-intro {
         margin-right: 0;
     }
@@ -400,5 +394,15 @@ p.about-me {
 
     .intro__img {
         max-width: 200px;
+    }
+
+    .about-intro {
+        flex-direction: column;
+    }
+
+    .about-me-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
